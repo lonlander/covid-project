@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>testpage</title>
+
+</head>
+
+<body>
+  <textarea id="textareaid"></textarea>
+<a href="#" onclick="insertAtCaret('textareaid', 'text to insert');return false;">Click Here to Insert</a>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src = "static/js/app.js"></script>
+         <script type="text/javascript">
+
+
+
+
+
+
+
+            function myFunction() {
+              document.getElementById("demo").innerHTML = "working";
+
+            }
+
+
+
+          function returnFunction(){
+
+          document.getElementById("demo").innerHTML = "not working";
+          }
+
+
+          window.onclick = e => {
+              console.log(e.target);
+              console.log(e.target.tagName);
+               console.log(e.target.innerText);
+               let x = e.target.innerText;
+          }
+
+         </script>
+
+
+
+
+
+
+
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+
+<button type="button" onclick="returnFunction()">return</button>
+
+<p id="demo">not working</p>
+
+
+
+<img class="press-logo" src="images\toi.png" alt="toi-logo">
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+
+
+
+</body>
+</html>
